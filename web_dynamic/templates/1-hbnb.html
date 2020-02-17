@@ -10,7 +10,7 @@
 
     <!-- FAVICON -->
 
-    <link rel="shortcut icon" href="{{ url_for('static', filename='images/icon.png?{}'.format(cache_id)) }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/icon.png') }}?{{ cache_id }}">
 
     <!-- **********************
          CSS styles
