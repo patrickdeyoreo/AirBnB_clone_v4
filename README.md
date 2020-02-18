@@ -32,6 +32,12 @@ HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db \
 [COMMAND HERE]
 ```
 
+## File Descriptions
+#### `web_dynamic/` - directory containing all files used for this project:
+[0-hbnb.py](/web_dynamic/0-hbnb.py) - Flask App that integrates with AirBnB static HTML Template
+* `def teardown_db(exception)` - This method calls .close()
+* `def hbnb_filters(the_id=None)` - This handles request to custom template with states, cities & amentities 
+
 ## Environment
 
 * __OS:__ Ubuntu 14.04 LTS
