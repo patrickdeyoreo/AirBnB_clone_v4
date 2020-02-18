@@ -32,6 +32,54 @@ HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db \
 [COMMAND HERE]
 ```
 
+## File Descriptions
+#### `web_dynamic/` - directory containing all files used for this project:
+[0-hbnb.py](/web_dynamic/0-hbnb.py) - Flask App that integrates with AirBnB static HTML Template
+* `def teardown_db(exception)` - This method calls .close()
+* `def hbnb_filters(the_id=None)` - This handles request to custom template with states, cities & amentities 
+
+[1-hbnb.py](/web_dynamic/1-hbnb.py) - Updated Flask App
+* `def teardown_db(exception)` - This method calls .close()
+* `def hbnb_filters(the_id=None)` - This handles request to custom template with states, cities & amentities 
+
+[2-hbnb.py](/web_dynamic/2-hbnb.py) - Updated Flask App
+* `def teardown_db(exception)` - This method calls .close()
+* `def hbnb_filters(the_id=None)` - This handles request to custom template with states, cities & amentities 
+
+[3-hbnb.py](/web_dynamic/3-hbnb.py) - Updated Flask App
+* `def teardown_db(exception)` - This method calls .close()
+* `def hbnb_filters(the_id=None)` - This handles request to custom template with states, cities & amentities 
+
+[4-hbnb.py](/web_dynamic/4-hbnb.py) - Updated Flask App
+* `def teardown_db(exception)` - This method calls .close()
+* `def hbnb_filters(the_id=None)` - This handles request to custom template with states, cities & amentities 
+
+#### `web_dynamic/templates/` - directory containing all HTML files used for this project:
+[0-hbnb.html](/web_dynamic/templates/0-hbnb.html) - Stucture of Hbnb web content
+
+[1-hbnb.html](/web_dynamic/templates/1-hbnb.html) - Update HTML file of Hbnb web content
+
+[2-hbnb.html](/web_dynamic/templates/2-hbnb.html) - Update HTML file of Hbnb web content
+
+[3-hbnb.html](/web_dynamic/templates/3-hbnb.html) - Update HTML file of Hbnb web content
+
+[4-hbnb.html](/web_dynamic/templates/4-hbnb.html) - Update HTML file of Hbnb web content
+
+#### `web_dynamic/static/scripts/` - directory containing all JS files used for this project:
+[1-hbnb.js](/web_dynamic/static/scripts/1-hbnb.js) - jQuery scripts of Hbnb web content
+
+[2-hbnb.js](/web_dynamic/static/scripts/2-hbnb.js) - Update jQuery scripts of Hbnb web content
+
+[3-hbnb.js](/web_dynamic/static/scripts/3-hbnb.js) - Update jQuery scripts of Hbnb web content
+
+[4-hbnb.js](/web_dynamic/static/scripts/4-hbnb.js) - Update jQuery scripts of Hbnb web content
+
+#### `web_dynamic/static/styles/` - directory containing CSS file used for this project:
+[3-header.css](/web_dynamic/static/styles/3-header.css) - CSS code for Hbnb
+
+#### `api/v1/app.py/` - Flask App that integrates with AirBnB static HTML Template
+[app.py](/api/v1/app.py/app.py) - Update CORS at the API entry point
+
 ## Environment
 
 * __OS:__ Ubuntu 14.04 LTS
@@ -218,7 +266,7 @@ github repo
 * Carrie Ybay, [hicarrie](https://github.com/hicarrie) | [@hicarrie_](https://twitter.com/hicarrie_)
 * Jared Heck, [jarehec](https://github.com/jarehec) | [@jarehec](https://twitter.com/jarehec)
 * Patrick DeYoreo, [patrickdeyoreo](https://github.com/patrickdeyoreo) | [@DeYoreoPatrick](https://twitter.com/DeYoreoPatrick)
-* Joan Cruz, [joancruzz](joancruzz) | [@joancruzz](https://twitter.com/joancruzz)
+* Joan Cruz, [joancruzz](https://github.com/joancruzz) | [@joancruzz](https://twitter.com/joancruzz)
 
 
 ## License
