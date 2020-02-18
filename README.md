@@ -38,6 +38,22 @@ HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db \
 * `def teardown_db(exception)` - This method calls .close()
 * `def hbnb_filters(the_id=None)` - This handles request to custom template with states, cities & amentities 
 
+[1-hbnb.py](/web_dynamic/1-hbnb.py) - Updated Flask App
+* `def teardown_db(exception)` - This method calls .close()
+* `def hbnb_filters(the_id=None)` - This handles request to custom template with states, cities & amentities 
+
+[2-hbnb.py](/web_dynamic/2-hbnb.py) - Updated Flask App
+* `def teardown_db(exception)` - This method calls .close()
+* `def hbnb_filters(the_id=None)` - This handles request to custom template with states, cities & amentities 
+
+[3-hbnb.py](/web_dynamic/3-hbnb.py) - Updated Flask App
+* `def teardown_db(exception)` - This method calls .close()
+* `def hbnb_filters(the_id=None)` - This handles request to custom template with states, cities & amentities 
+
+[4-hbnb.py](/web_dynamic/4-hbnb.py) - Updated Flask App
+* `def teardown_db(exception)` - This method calls .close()
+* `def hbnb_filters(the_id=None)` - This handles request to custom template with states, cities & amentities 
+
 ## Environment
 
 * __OS:__ Ubuntu 14.04 LTS
