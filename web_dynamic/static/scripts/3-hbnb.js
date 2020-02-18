@@ -24,12 +24,14 @@ $(document).ready(() => {
   $.ajax({
         url: 'http://0.0.0.0:5001/api/v1/places_search/',
         type: 'post',
+        contentType: 'application/json',
         data: {},
-        headers: {'Content-Type': 'application/json'},
         dataType: 'json',
         success: (data) => {
           for (const place of Object.values(data)) {
             console.log(place);
+            const article = jQuery('<article>');
+            article.append('<div>': {'class': 'information'}).add('<div>': {'class': 'max_guest'}).add('<i>': {'class': 'fa fa-users fa-3x', 'aria-hidden': 'true'}, `${place.max_guest} Guests`);
           }
         }
   });
