@@ -57,7 +57,7 @@ HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db \
 #### `web_dynamic/templates/` - directory containing all HTML files used for this project:
 [0-hbnb.html](/web_dynamic/templates/0-hbnb.html) - Stucture of Hbnb web content
 
-[1-hbnb.html](/web_dynamic/templates/1-hbnb.html) - Update Stucture of Hbnb web content
+[1-hbnb.html](/web_dynamic/templates/1-hbnb.html) - Update HTML file of Hbnb web content
 
 
 ## Environment
