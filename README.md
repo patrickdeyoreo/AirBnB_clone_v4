@@ -61,6 +61,8 @@ HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db \
 
 [2-hbnb.html](/web_dynamic/templates/2-hbnb.html) - Update HTML file of Hbnb web content
 
+[3-hbnb.html](/web_dynamic/templates/3-hbnb.html) - Update HTML file of Hbnb web content
+
 ## Environment
 
 * __OS:__ Ubuntu 14.04 LTS
