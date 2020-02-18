@@ -67,8 +67,11 @@ HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db \
 
 #### `web_dynamic/static/scripts/` - directory containing all JS files used for this project:
 [1-hbnb.js](/web_dynamic/static/scripts/1-hbnb.js) - jQuery scripts of Hbnb web content
+
 [2-hbnb.js](/web_dynamic/static/scripts/2-hbnb.js) - Update jQuery scripts of Hbnb web content
+
 [3-hbnb.js](/web_dynamic/static/scripts/3-hbnb.js) - Update jQuery scripts of Hbnb web content
+
 [4-hbnb.js](/web_dynamic/static/scripts/4-hbnb.js) - Update jQuery scripts of Hbnb web content
 
 #### `web_dynamic/static/styles/` - directory containing CSS file used for this project:
