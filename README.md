@@ -266,7 +266,7 @@ github repo
 * Carrie Ybay, [hicarrie](https://github.com/hicarrie) | [@hicarrie_](https://twitter.com/hicarrie_)
 * Jared Heck, [jarehec](https://github.com/jarehec) | [@jarehec](https://twitter.com/jarehec)
 * Patrick DeYoreo, [patrickdeyoreo](https://github.com/patrickdeyoreo) | [@DeYoreoPatrick](https://twitter.com/DeYoreoPatrick)
-* Joan Cruz, [joancruzz](joancruzz) | [@joancruzz](https://twitter.com/joancruzz)
+* Joan Cruz, [joancruzz](https://github.com/joancruzz) | [@joancruzz](https://twitter.com/joancruzz)
 
 
 ## License
