@@ -21,4 +21,16 @@ $(document).ready(() => {
       $('DIV#api_status').removeClass('available');
     }
   });
+  $.ajax({
+        url: 'http://0.0.0.0:5001/api/v1/places_search/',
+        type: 'post',
+        data: {},
+        headers: {'Content-Type': 'application/json'},
+        dataType: 'json',
+        success: (data) => {
+          for (const place of Object.values(data)) {
+            console.log(place);
+          }
+        }
+  });
 });
