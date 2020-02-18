@@ -63,7 +63,7 @@ $(function () {
           article.append(desc);
           section.append(article);
         }
-      })
+      });
     }
   });
 });
