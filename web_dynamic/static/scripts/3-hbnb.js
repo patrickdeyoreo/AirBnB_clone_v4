@@ -14,7 +14,7 @@ $(document).ready(() => {
       $('.amenities h4').html('&nbsp');
     }
   });
-  $.get('http://0.0.0.0:5001/api/v1/status/', (data, status) => {
+  $.get('http://0.0.0.0:5001/api/v1/status/', (data) => {
     if (data.status === 'OK') {
       $('DIV#api_status').addClass('available');
     } else {
@@ -33,30 +33,37 @@ $(document).ready(() => {
         url: 'http://0.0.0.0:5001/api/v1/users/',
         type: 'GET',
         success: (users) => {
-          const owners = {};
           for (const user of Object.values(users)) {
-            owners[user.id] = [user.first_name, user.last_name].join(' ');
+            users[user.id] = `${user.first_name} ${user.last_name}`;
           }
           for (const place of Object.values(places)) {
-            console.log(place);
+            const section = $('.places');
             const article = $('<article>');
-            const title = $('<div class="title">');
-            title.append(`<h2>${place.name}</h2>`);
-            title.append(`<div class="price_by_night">$${place.price_by_night}</div>`);
-            const information = $('<div class="information">');
-            const maxGuest = $('<div class="max_guest">').add(`<i class="fa fa-users fa-3x" aria-hidden="true"></i>${place.max_guest} Guests`);
-            const numberRooms = $('<div class="number_rooms">').add(`<i class="fa fa-users fa-3x" aria-hidden="true"></i>${place.number_rooms} Bedrooms`);
-            const numberBathrooms = $('<div class="number_bathrooms">').add(`<i class="fa fa-users fa-3x" aria-hidden="true"></i>${place.number_bathrooms} Bathrooms`);
-            const owner = $('<div class="user">').add(`<strong>Owner: ${owners[place.user_id]}</strong>`);
-            const description = $('<div class="description">').add(`<p>${place.description}</p>`);
-            information.append(maxGuest);
-            information.append(numberRooms);
-            information.append(numberBathrooms);
-            article.append(title);
-            article.append(information);
-            article.append(owner);
-            article.append(description);
-            $('.places').append(article);
+            const name = $('<div class="title">');
+            name.append(`<h2>${place.name}</h2>`);
+            name.append(`<div class="price_by_night">$${place.price_by_night}</div>`);
+            const info = $('<div class="information">');
+            const maxGuest = $('<div class="max_guest">');
+            maxGuest.append('<i class="fa fa-users fa-3x" aria-hidden="true"></i>');
+            maxGuest.append(`${place.max_guest} Guests`);
+            const numRooms = $('<div class="number_rooms">');
+            numRooms.append('<i class="fa fa-bed fa-3x" aria-hidden="true"></i>');
+            numRooms.append(`${place.number_rooms} Bedrooms`);
+            const numBaths = $('<div class="number_bathrooms">');
+            numBaths.append('<i class="fa fa-bath fa-3x" aria-hidden="true"></i>');
+            numBaths.append(`${place.number_bathrooms} Bathrooms`);
+            info.append(maxGuest);
+            info.append(numRooms);
+            info.append(numBaths);
+            const user = $('<div class="user">');
+            user.append(`<strong>Owner: ${users[place.user_id]}</strong>`);
+            const desc = $('<div class="description">');
+            desc.append(`<p>${place.description}</p>`);
+            article.append(name);
+            article.append(info);
+            article.append(user);
+            article.append(desc);
+            section.append(article);
           }
         }
       });
